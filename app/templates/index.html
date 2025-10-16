@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='ar'>
+<head>
+<meta charset='utf-8'>
+<title>AI Image Converter</title>
+<script src='/static/js/app.js' defer></script>
+<style>
+body{font-family:Arial;margin:2rem auto;max-width:800px;text-align:center;}
+.preview{max-width:100%;margin-top:1rem;}
+</style>
+</head>
+<body>
+<h1>🧠 محول الصور بالذكاء الاصطناعي</h1>
+<form id='uploadForm'>
+  <input type='file' name='file' id='fileInput' accept='image/*' required><br><br>
+  <select name='method' id='method'>
+    <option value='grayscale'>تحويل إلى أبيض وأسود</option>
+    <option value='cartoon'>تأثير كرتوني</option>
+    <option value='edge'>كشف الحواف</option>
+  </select><br><br>
+  <label><input type='checkbox' id='useExternal'> استخدام نموذج ذكاء خارجي</label><br><br>
+  <button type='submit'>حول الصورة</button>
+</form>
+<div id='result'></div>
+</body>
+</html>
